@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1" >
+	<title>Document</title>
+	<link rel="stylesheet" href="style/reset.css">
+	<link rel="stylesheet" href="style/common.css">
+	<link rel="stylesheet" href="style/statusbar.css">
+	<link rel="stylesheet" href="style/about.css">
+	<link rel="stylesheet" href="style/footer.css">
+	<script src="js/zepto.min.js"></script>
+</head>
+<body>
+	<div class="status-bar">
+		<div class="status-wrap">
+			<a href="javascript:window.history.back()" class="back_btn"></a>
+			<h1>关于我们</h1>
+			<a href="javascript:;" class="menu_btn"></a>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="">首页</a></li>
+				<li><a href="">安全保障</a></li>
+				<li><a href="">我要投资</a></li>
+				<li><a href="">账户中心</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<!-- 公司简介 start -->
+	<div class="brief">
+		<h2><span>公司简介</span></h2>
+		<p>
+			招财猫理财创始人及其核心团队均来自于知名的网络公司、金融公司、银行和风投管理机构。发展过程中，尤其注重引入多项战略合作，逐渐壮大的资本实力为招财猫理财的团队建设提供了坚实基础。
+		</p>
+		<p>
+			招财猫理财以打造满怀诚意的互联网金融平台为使命，全员只做一件事： 为投融双方竭诚服务，让投融双真正受益，打造一个极致体验的互联网金融平台。
+		</p>
+		<p>
+			招财猫理财坚持投资者的利益要充分保护、资金要安全托管、信息要公开透明，通过北京银行资金存管系统、小额分散原则、风险备用金专户三个基本手段来完善优化平台安全体系。
+		</p>
+	</div>
+	<!-- 公司简介 end -->
+
+	<!-- 发展历程 start -->
+	<div class="history">
+		<h2><span>发展历程</span></h2>
+		<ul>
+			<li>2017.01 <span class="seperate"></span> 招财猫理财累积投资金额突破100亿</li>
+			<li>2016.12 <span class="seperate"></span> 招财猫理财双十二单日投资额突破1.55亿</li>
+			<li>2016.11 <span class="seperate"></span> 风险备用金增至3701万</li>
+			<li>2016.11 <span class="seperate"></span> 双十一单日投资额突破1.58亿</li>
+			<li>2016.10 <span class="seperate"></span> 成为浙江互联网金融联盟理事单位</li>
+			<li>2016.08 <span class="seperate"></span> 招财猫理财举办818两周年庆</li>
+			<li>2016.06 <span class="seperate"></span> 累计投资额突破60亿人民币</li>
+			<li>2016.05 <span class="seperate"></span> 累计投资额突破50亿人民币</li>
+			<li>2016.04 <span class="seperate"></span> 国资单位杭州文广集团入股招财猫理财</li>
+		</ul>
+	</div>
+	<!-- 发展历程 end -->
+
+	<!-- 资质荣誉 start -->
+	<div class="honour">
+		<h2><span>资质 荣誉</span></h2>
+	</div>
+	<!-- 资质荣誉 end -->
+
+	<!-- 底部 start -->
+	<footer>
+		<p class="footer-link"><a href="">触屏版</a> | <a href="">电脑版</a> | <a href="">APP下载</a> </p>
+		<p class="copyright">©2017招财猫理财 浙ICP备14041616号</p>
+	</footer>
+	<!-- 底部 end -->
+
+	<div class="mask"></div>
+	<script>
+		$(".menu_btn").click(function(){
+			$("nav").toggle();
+			$(".mask").toggle();
+		});
+	</script>
+</body>
+</html>

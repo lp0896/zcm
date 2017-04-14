@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1" >
+	<title>Document</title>
+	<link rel="stylesheet" href="style/reset.css">
+	<link rel="stylesheet" href="style/common.css">
+	<link rel="stylesheet" href="style/index.css">
+	<link rel="stylesheet" href="style/product.css">
+	<link rel="stylesheet" href="style/footer.css">
+	<link rel="stylesheet" href="style/swiper.min.css">
+	<link rel="icon" href="images/logo.png">
+	<script src="js/progressbar.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+</head>
+<body>
+	<!-- 头部 start -->
+	<header>
+		<h1><a href="">招财猫理财</a></h1>
+		<p>
+			<a href="">注册</a> |
+			<a href="">登录</a>
+		</p>	
+	</header>
+	<!-- 头部 end -->
+	
+	<!-- 导航 start -->
+	<nav>
+		<ul>
+			<li><a href="" class="on">首页</a></li>
+			<li><a href="list.html">我要投资</a></li>
+			<li><a href="">财产中心</a></li>
+		</ul>
+	</nav>
+	<!-- 导航 end -->
+
+	<!-- 图片轮播 start -->
+	<div class="swiper-container">
+    		<div class="swiper-wrapper">
+        			<div class="swiper-slide"><img src="images/home_regbanner1.png" alt=""></div>
+        			<div class="swiper-slide"><img src="images/home_regbanner2.png" alt=""></div>
+        			<div class="swiper-slide"><img src="images/home_regbanner3.png" alt=""></div>
+		</div>
+		<!-- 如果需要分页器 -->
+		<div class="swiper-pagination"></div>
+	</div>
+	<!-- 图片轮播 end -->
+	<!-- 菜单区域 start -->
+	<div class="menu">
+		<ul>
+			<li><a href=""><img src="images/home_ico_01.png" alt=""><span>安全保障</span></a></li>
+			<li><a href="about.html"><img src="images/home_ico_02.png" alt=""><span>关于我们</span></a></li>
+			<li><a href=""><img src="images/home_ico_03.png" alt=""><span>新手指引</span></a></li>
+			<li><a href=""><img src="images/home_ico_04.png" alt=""><span>帮助中心</span></a></li>
+		</ul>
+	</div>
+	<!-- 菜单区域 end -->
+	
+	<!-- 新手专享 start -->
+	<section class="freshman">
+		<h2>新手专享</h2>
+		<a href="detail.html">
+			<div class="product">
+				<h3>新手专享1860号13期</h3>
+				<ul>
+					<li>12.88%</li>
+					<li>
+						<p><strong>5</strong>天</p>
+						<p>投资期限</p>
+					</li>
+					<li>
+						<div data-progress="73" class="progress" id="progress1"></div>
+					</li>
+				</ul>
+			</div>
+		</a>
+		
+	</section>
+	<!-- 新手专享 end -->
+	
+	<!-- 热门产品 start  -->
+	<section class="hot">
+		<h2>热门产品</h2>
+		<div class="product">
+			<h3>贺岁标1662号6期 <span>仅限喵钱包支付</span></h3>
+			<ul>
+				<li>11.8%</li>
+				<li>
+					<p><strong>60</strong>天</p>
+					<p>投资期限</p>
+				</li>
+				<li><div data-progress="20" class="progress" id="progress2"></div></li>
+			</ul>
+		</div>
+
+		<div class="product">
+			<h3>醇酒计划2027号2期 <span>红包</span></h3>
+			<ul>
+				<li>9.5% <span>+0.5%</span></li>
+				<li>
+					<p><strong>180</strong>天</p>
+					<p>投资期限</p>
+				</li>
+				<li><div data-progress="69" class="progress" id="progress3"></div></li>
+			</ul>
+		</div>
+
+	</section>
+	<!-- 热门产品 end  -->
+
+	<!-- 企业动态  start -->
+	<section class="news">
+		<h2>企业动态</h2>
+		<ul>
+			<li>
+				<a href="">
+					<img src="images/news1.jpg" alt="">
+					<div>
+						<h3>新年来许愿 狂返现金券</h3>
+						<p>来源:招财猫理财 <span>2017-01-22</span></p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="images/news2.jpg" alt="">
+					<div>
+						<h3>口令抢红包 福利拿到爆</h3>
+						<p>来源:招财猫理财 <span>2017-01-22</span></p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="images/news3.jpg" alt="">
+					<div>
+						<h3>百万红包雨 抢钱大作战</h3>
+						<p>来源:招财猫理财 <span>2017-01-22</span></p>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- 企业动态  end -->
+
+	<!-- 底部 start -->
+	<footer>
+		<p class="footer-link"><a href="">触屏版</a> | <a href="">电脑版</a> | <a href="">APP下载</a> </p>
+		<p class="copyright">©2017招财猫理财 浙ICP备14041616号</p>
+	</footer>
+	<!-- 底部 end -->
+
+	<script>
+		
+		var options = {
+		  color: '#f00',
+		  strokeWidth: 5,
+		  trailWidth: 5,
+		  // easing: 'easeInOut',
+		  duration: 500,
+		  text: {
+		    autoStyleContainer: false
+		  },
+		  from: { color: '#f00', width: 5 },
+		  to: { color: '#f00', width: 5 },
+		  // Set default step function for all animate calls
+		  step: function(state, circle) {
+		    circle.path.setAttribute('stroke', state.color);
+		    circle.path.setAttribute('stroke-width', state.width);
+
+		    var value = Math.round(circle.value() * 100);
+		    if (value === 0) {
+		      circle.setText('');
+		    } else {
+		      circle.setText(value + "%");
+		    }
+
+		  }
+		}
+
+		//针对每一个.progress，需要生成一个实例
+		var bar1 = new ProgressBar.Circle('#progress1', options);
+		bar1.animate(.75);
+
+
+		var bar2 = new ProgressBar.Circle('#progress2', options);
+		bar2.animate(.20);
+
+
+		var bar3 = new ProgressBar.Circle('#progress3', options);
+		bar3.animate(.63);
+
+		var mySwiper = new Swiper ('.swiper-container', {
+	    		loop: true, 
+	    		autoplay: 3000,
+	    		// 如果需要分页器
+	    		pagination: '.swiper-pagination',
+	    		autoplayDisableOnInteraction : false
+	  	})       
+	</script>
+</body>
+</html>

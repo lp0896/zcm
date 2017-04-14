@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1" >
+	<title>Document</title>
+	<link rel="stylesheet" href="style/reset.css">
+	<link rel="stylesheet" href="style/common.css">
+	<link rel="stylesheet" href="style/statusbar.css">
+	<link rel="stylesheet" href="style/detail.css">
+	<link rel="stylesheet" href="style/list.css">
+	<link rel="stylesheet" href="style/footer.css">
+	<script src="js/zepto.min.js"></script>
+	<script src="js/progressbar.min.js"></script>
+</head>
+<body>
+	<div class="status-bar">
+		<div class="status-wrap">
+			<a href="javascript:window.history.back()" class="back_btn"></a>
+			<h1>我要投资</h1>
+			<a href="javascript:;" class="menu_btn"></a>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="">首页</a></li>
+				<li><a href="">安全保障</a></li>
+				<li><a href="">我要投资</a></li>
+				<li><a href="">账户中心</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<!-- 产品说明 start -->
+	<div class="introduce">
+		<div class="introduce-hd">
+			<h2>11.66%</h2>
+		</div>
+		
+		<div class="introduce-bd">
+			<ul>
+				<li>500元起投</li>
+				<li>期限180天</li>
+			</ul>
+
+			<div class="tips">
+				<p>
+					<span class="tips_icon1">省级律所法律支持</span>
+					<span class="tips_icon2">浙大友创战略入股</span>
+				</p>
+				<p>
+					<span class="tips_icon3">招财猫易贷严风控</span>
+					<span class="tips_icon4">千万级风险保障金</span>
+				</p>
+			</div>
+
+			<div class="progress">
+				<div class="progress-bar"></div>
+				<p>
+					<a href="">已投资<strong>85</strong>人</a>
+					<span>剩余可投<strong>1039500</strong>元</span>
+				</p>
+			</div>
+		</div>
+
+		<div class="introduce-ft">
+			<a href="" class="view-detail">查看项目详情></a>
+			<div class="btn">
+				<a href="" class="income-btn">收益估算</a>
+				<a href="" class="invest-btn">立即投资</a>
+			</div>
+		</div>
+
+	</div>
+	<!-- 产品说明 end -->
+
+	
+	
+	<div class="mask"></div>
+	<script>
+		$(".menu_btn").click(function(){
+			$("nav").toggle();
+			$(".mask").toggle();
+		});
+
+		var bar = new ProgressBar.Line('.progress-bar', {
+		  strokeWidth: 8,
+		  easing: 'easeInOut',
+		  duration: 1500,
+		  color: '#f00',
+		  trailColor: '#eee',
+		  trailWidth: 8,
+		  svgStyle: {width: '100%', height: '100%',borderRadius: "5px"},
+		  text: {
+		    style: {
+		      // Text color.
+		      // Default: same as stroke color (options.color)
+		      color: '#fff',
+		      position: 'absolute',
+		      background: "#f00",
+		      left: '0',
+		      top: '-0.45rem',
+		      padding: "2px 5px",
+		      margin: 0,
+		      borderRadius : "2px",
+		      transform: null,
+		      fontSize: "14px"
+		    },
+		    autoStyleContainer: false
+		  },
+		  from: {color: '#ccc'},
+		  to: {color: '#f00'},
+		  step : function(state, bar){
+		  	  bar.text && ( bar.text.style.left= bar.value() * 100+ '%');
+		    // console.dir(bar.text); 
+		    console.dir(bar._container.offsetWidth); 
+		    bar.setText(Math.round(bar.value() * 100) + '%');
+		  }
+		});
+		// bar.setText( '80%');
+		bar.animate(0.8);  // Number from 0.0 to 1.0
+	</script>
+</body>
+</html>

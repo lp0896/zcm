@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1" >
+	<link rel="stylesheet" href="style/reset.css">
+	<link rel="stylesheet" href="style/common.css">
+	<link rel="stylesheet" href="style/statusbar.css">
+	<link rel="stylesheet" href="style/product.css">
+	<link rel="stylesheet" href="style/list.css">
+	<link rel="stylesheet" href="style/footer.css">
+	<script src="js/zepto.min.js"></script>
+</head>
+<body>
+	<div class="status-bar">
+		<div class="status-wrap">
+			<a href="javascript:window.history.back()" class="back_btn"></a>
+			<h1>我要投资</h1>
+			<a href="javascript:;" class="menu_btn"></a>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="">首页</a></li>
+				<li><a href="">安全保障</a></li>
+				<li><a href="">我要投资</a></li>
+				<li><a href="">账户中心</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="banner">
+		<a href=""><img src="images/list_banner.jpg" alt=""></a>
+	</div>
+	
+	<div class="product">
+		<a href="detail.html">
+			<h3>贺岁标1662号6期 <span>仅限喵钱包支付</span></h3>
+			<ul>
+				<li>11.8%</li>
+				<li>
+					<p><strong>60</strong>天</p>
+					<p>投资期限</p>
+				</li>
+				<li><div data-progress="20" class="progress" id="progress2"></div></li>
+			</ul>
+		</a>
+	</div>
+
+	<div class="product">
+		<h3>醇酒计划2027号2期 <span>红包</span></h3>
+		<ul>
+			<li>9.5% <span>+0.5%</span></li>
+			<li>
+				<p><strong>180</strong>天</p>
+				<p>投资期限</p>
+			</li>
+			<li><div data-progress="69" class="progress" id="progress3"></div></li>
+		</ul>
+	</div>
+
+	<div class="product">
+		<h3>贺岁标1662号6期 <span>仅限喵钱包支付</span></h3>
+		<ul>
+			<li>11.8%</li>
+			<li>
+				<p><strong>60</strong>天</p>
+				<p>投资期限</p>
+			</li>
+			<li><div data-progress="20" class="progress" id="progress2"></div></li>
+		</ul>
+	</div>
+
+	<div class="product">
+		<h3>醇酒计划2027号2期 <span>红包</span></h3>
+		<ul>
+			<li>9.5% <span>+0.5%</span></li>
+			<li>
+				<p><strong>180</strong>天</p>
+				<p>投资期限</p>
+			</li>
+			<li><div data-progress="69" class="progress" id="progress3"></div></li>
+		</ul>
+	</div>
+
+	<div class="product">
+		<h3>贺岁标1662号6期 <span>仅限喵钱包支付</span></h3>
+		<ul>
+			<li>11.8%</li>
+			<li>
+				<p><strong>60</strong>天</p>
+				<p>投资期限</p>
+			</li>
+			<li><div data-progress="20" class="progress" id="progress2"></div></li>
+		</ul>
+	</div>
+
+	<div class="product">
+		<h3>醇酒计划2027号2期 <span>红包</span></h3>
+		<ul>
+			<li>9.5% <span>+0.5%</span></li>
+			<li>
+				<p><strong>180</strong>天</p>
+				<p>投资期限</p>
+			</li>
+			<li><div data-progress="69" class="progress" id="progress3"></div></li>
+		</ul>
+	</div>
+
+	<!-- 底部 start -->
+	<footer>
+		<p class="footer-link"><a href="">触屏版</a> | <a href="">电脑版</a> | <a href="">APP下载</a> </p>
+		<p class="copyright">©2017招财猫理财 浙ICP备14041616号</p>
+	</footer>
+	<!-- 底部 end -->
+
+	<div class="mask"></div>
+
+	<script>
+		$(".menu_btn").click(function(){
+			$("nav").toggle();
+			$(".mask").toggle();
+		});
+	</script>
+</body>
+</html>
